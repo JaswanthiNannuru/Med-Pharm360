@@ -13,7 +13,7 @@ public class DoctorSignupActivity extends DoctorHomeActivity {
         setContentView(R.layout.activity_doctorsignup);
     }
 
-    private void setContentView(int activity_doctorsignup) {
+    public void setContentView(int activity_doctorsignup) {
     }
 
     public static final int Signup = 0;
