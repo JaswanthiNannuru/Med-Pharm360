@@ -16,7 +16,7 @@ public class DoctorHomeActivity extends DoctordataActivity {
 
 
     public void doctorSignup(View v){
-        Intent intent = new Intent(this, DoctordataActivity.class);
+        Intent intent = new Intent(this,DoctordataActivity.class);
         startActivityForResult(intent,Signup);
 
     }

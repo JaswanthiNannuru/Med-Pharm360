@@ -16,9 +16,6 @@ public class MainActivity extends AppCompatActivity {
     public static final int Login =  0;
     public static final int Signup = 0;
 
-
-
-
     public void clickLogin(View v){
         Intent intent = new Intent(this,DoctorHomeActivity.class);
         startActivityForResult(intent,Login);
