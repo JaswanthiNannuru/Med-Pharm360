@@ -10,11 +10,12 @@ public class PatientSignupActivity extends PatientHomeActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_doctorsignup);
+        setContentView(R.layout.activity_patientsignup);
     }
 
-   // public void setContentView(int activity_doctorsignup) {
-   // }
+
+   public void setContentView(int activity_patientsignup) {
+   }
 
     public static final int Signup1 = 0;
 
@@ -22,13 +23,7 @@ public class PatientSignupActivity extends PatientHomeActivity {
     public void patientSignup(View v){
         Intent intent = new Intent(this, PatientHomeActivity.class);
         startActivityForResult(intent,Signup1);
-
     }
-
-    public void startActivityForResult(Intent intent, int signup1) {
-    }
-
-}
 
 
 
