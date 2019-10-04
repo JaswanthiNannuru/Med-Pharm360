@@ -12,7 +12,11 @@ public class DoctorSignupActivity extends DoctorHomeActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_doctorsignup);
     }
-        public static final int Signup = 0;
+
+    private void setContentView(int activity_doctorsignup) {
+    }
+
+    public static final int Signup = 0;
 
 
         public void doctorSignup(View v){
