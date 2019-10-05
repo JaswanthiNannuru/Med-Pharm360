@@ -17,12 +17,12 @@ public class DoctordataActivity extends AppCompatActivity {
     public static final int back5 =  0;
 
     public void conformClick(View v){
-        Intent intent = new Intent(this,AppCompatActivity.class);
+        Intent intent = new Intent(this,DoctorHomeActivity.class);
         startActivityForResult(intent,data);
 
     }
     public void back5Click(View v) {
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, DoctorHomeActivity.class);
         startActivityForResult(intent,back5);
     }
 

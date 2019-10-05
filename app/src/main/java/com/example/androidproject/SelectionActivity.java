@@ -31,5 +31,14 @@ public class SelectionActivity extends MainActivity
         startActivityForResult(intent,back1);
     }
 
+    public void onDoctor(View v) {
+        Intent intent = new Intent(this, DoctorSignupActivity.class);
+        startActivityForResult(intent,1);
+    }
+
+    public void onPatient(View v) {
+        Intent intent = new Intent(this, PatientSignupActivity.class);
+        startActivityForResult(intent,1);
+    }
 
 }

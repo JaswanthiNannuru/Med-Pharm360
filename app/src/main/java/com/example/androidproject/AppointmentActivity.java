@@ -11,14 +11,14 @@ public class AppointmentActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_doctordata);
+        setContentView(R.layout.activity_appointment);
     }
 
     public static final int appointment = 0;
     public static final int back10 = 0;
 
-    public void conformClick(View v) {
-        Intent intent = new Intent(this, AppCompatActivity.class);
+    public void conform1Click(View v) {
+        Intent intent = new Intent(this, PatientHomeActivity.class);
         startActivityForResult(intent, appointment);
 
     }

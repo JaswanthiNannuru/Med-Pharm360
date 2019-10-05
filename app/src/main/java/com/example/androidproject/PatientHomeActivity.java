@@ -26,7 +26,7 @@ public class PatientHomeActivity extends AppCompatActivity {
 
     }
     public void healthhistoryClick(View v){
-        Intent intent = new Intent(this,HealthhistoryActivity.class);
+        Intent intent = new Intent(this,PatientsrecordActivity.class);
         startActivityForResult(intent,healthhistory);
 
     }
