@@ -8,7 +8,7 @@ public class HistoryloginActivity extends DoctorHomeActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_doctorhome);
+        setContentView(R.layout.activity_historylogin);
     }
     public static final int healthlogin = 0;
 

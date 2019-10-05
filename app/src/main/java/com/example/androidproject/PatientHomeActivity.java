@@ -12,19 +12,19 @@ public class PatientHomeActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_doctorhome);
+        setContentView(R.layout.activity_patienthome);
     }
     public static final int doctorsmenu = 0;
     public static final int healthhistory = 0;
 
 
     public void doctorlistClick(View v){
-        Intent intent = new Intent(this,AppCompatActivity.class);
+        Intent intent = new Intent(this,DoctorslistActivity.class);
         startActivityForResult(intent,doctorsmenu);
 
     }
     public void healthhistoryClick(View v){
-        Intent intent = new Intent(this,AppCompatActivity.class);
+        Intent intent = new Intent(this,HealthhistoryActivity.class);
         startActivityForResult(intent,healthhistory);
 
     }

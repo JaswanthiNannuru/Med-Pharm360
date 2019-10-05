@@ -21,7 +21,7 @@ public class DoctorSignupActivity extends SelectionActivity {
 
 
         public void doctorSignup(View v){
-        Intent intent = new Intent(this, DoctorHomeActivity.class);
+        Intent intent = new Intent(this,DoctorHomeActivity.class);
         startActivityForResult(intent,Signup);
 
     }

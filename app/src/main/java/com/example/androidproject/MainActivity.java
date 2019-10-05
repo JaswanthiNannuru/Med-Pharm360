@@ -13,12 +13,19 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
-    public static final int Login =  0;
+    public static final int Login1 =  0;
+    public static final int Login2 =  0;
+
     public static final int Signup = 0;
 
-    public void clickLogin(View v){
+    public void doctorLogin(View v){
         Intent intent = new Intent(this,DoctorHomeActivity.class);
-        startActivityForResult(intent,Login);
+        startActivityForResult(intent,Login1);
+
+    }
+    public void patientLogin(View v){
+        Intent intent = new Intent(this,PatientHomeActivity.class);
+        startActivityForResult(intent,Login2);
 
     }
     public void signupClick(View v){
