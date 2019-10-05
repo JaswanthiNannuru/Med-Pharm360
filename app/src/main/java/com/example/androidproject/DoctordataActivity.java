@@ -14,11 +14,17 @@ public class DoctordataActivity extends AppCompatActivity {
         setContentView(R.layout.activity_doctordata);
     }
     public static final int data =  0;
+    public static final int back6 =  0;
 
     public void conformClick(View v){
         Intent intent = new Intent(this,AppCompatActivity.class);
         startActivityForResult(intent,data);
 
     }
+    public void back6Click(View v) {
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivityForResult(intent,back6);
+    }
+
 
 }

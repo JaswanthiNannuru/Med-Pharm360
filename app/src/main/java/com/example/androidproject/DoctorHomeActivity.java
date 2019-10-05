@@ -16,6 +16,8 @@ public class DoctorHomeActivity extends DoctordataActivity {
     }
     public static final int hours = 0;
     public static final int history = 0;
+    public static final int back5 = 0;
+
 
 
     public void hoursClick(View v){
@@ -28,6 +30,11 @@ public class DoctorHomeActivity extends DoctordataActivity {
         startActivityForResult(intent,history);
 
     }
+    public void back5Click(View v) {
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivityForResult(intent, back5);
+    }
+
 
 }
 
