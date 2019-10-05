@@ -14,8 +14,11 @@
         <activity android:name=".PatientSignupActivity"> </activity>
         <activity android:name=".PatientHomeActivity"> </activity>
         <activity android:name=".DoctorHomeActivity"> </activity>
-
-
+        <activity android:name=".DoctordataActivity"> </activity>
+        <activity android:name=".HistoryloginActivity"> </activity>
+        <activity android:name=".HealthhistoryActivity"> </activity>
+        <activity android:name=".DoctorslistActivity"> </activity>
+        <activity android:name=".AppointmentActivity"> </activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

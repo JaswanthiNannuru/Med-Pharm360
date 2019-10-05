@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
     public void signupClick(View v){
-        Intent intent = new Intent(this,PatientHomeActivity.class);
+        Intent intent = new Intent(this,SelectionActivity.class);
         startActivityForResult(intent,Signup);
 
     }

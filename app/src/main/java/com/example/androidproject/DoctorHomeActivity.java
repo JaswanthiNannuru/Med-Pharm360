@@ -26,7 +26,7 @@ public class DoctorHomeActivity extends DoctordataActivity {
 
     }
     public void historyClick(View v){
-        Intent intent = new Intent(this,DoctordataActivity.class);
+        Intent intent = new Intent(this,HistoryloginActivity.class);
         startActivityForResult(intent,history);
 
     }

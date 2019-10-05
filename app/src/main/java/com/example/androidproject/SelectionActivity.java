@@ -4,7 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class SelectionActivity extends MainActivity
+public class SelectionActivity extends DoctorSignupActivity
 {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
