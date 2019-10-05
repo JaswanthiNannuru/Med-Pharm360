@@ -10,22 +10,12 @@ public class HealthhistoryActivity extends MainActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_healthhistory);
     }
-    public static final int records = 0;
+    public static final int healthlogin = 0;
 
 
-    public void patient1Click(View v){
-        Intent intent = new Intent(this,HistoryloginActivity.class);
-        startActivityForResult(intent,records);
-
-    }
-    public void patient2Click(View v){
-        Intent intent = new Intent(this,HistoryloginActivity.class);
-        startActivityForResult(intent,records);
-
-    }
-    public void patient3Click(View v){
-        Intent intent = new Intent(this,HistoryloginActivity.class);
-        startActivityForResult(intent,records);
+    public void okCkick(View v){
+        Intent intent = new Intent(this,DoctorslistActivity.class);
+        startActivityForResult(intent,healthlogin);
 
     }
 
