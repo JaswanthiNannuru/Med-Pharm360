@@ -17,12 +17,17 @@ public class DoctorSignupActivity extends DoctorHomeActivity {
     }
 
     public static final int Signup = 0;
+    public static final int back2 = 0;
 
 
         public void doctorSignup(View v){
         Intent intent = new Intent(this, DoctorHomeActivity.class);
         startActivityForResult(intent,Signup);
 
+    }
+    public void back1Click(View v) {
+        Intent intent = new Intent(this, SelectionActivity.class);
+        startActivityForResult(intent,back2);
     }
 
 }

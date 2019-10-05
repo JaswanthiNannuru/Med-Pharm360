@@ -13,6 +13,8 @@ public class SelectionActivity extends DoctorSignupActivity
     }
     public static final int Doctor = 0;
     public static final int Patient = 0;
+    public static final int back1 = 0;
+
 
     public void doctorClick(View v){
         Intent intent = new Intent(this,DoctorSignupActivity.class);
@@ -23,6 +25,10 @@ public class SelectionActivity extends DoctorSignupActivity
         Intent intent = new Intent(this,PatientSignupActivity.class);
         startActivityForResult(intent,Patient);
 
+    }
+    public void back1Click(View v) {
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivityForResult(intent,back1);
     }
 
 
