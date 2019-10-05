@@ -12,6 +12,7 @@ public class HistoryloginActivity extends DoctorHomeActivity{
     }
 
     public static final int records = 0;
+    public static final int back6 = 0;
 
 
     public void patient1Click(View v){
@@ -29,6 +30,12 @@ public class HistoryloginActivity extends DoctorHomeActivity{
         startActivityForResult(intent,records);
 
     }
+
+    public void back6Click(View v) {
+        Intent intent = new Intent(this, HistoryloginActivity.class);
+        startActivityForResult(intent,back6);
+    }
+
 
 
 }

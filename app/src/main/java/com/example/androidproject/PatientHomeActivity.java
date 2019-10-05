@@ -16,6 +16,8 @@ public class PatientHomeActivity extends AppCompatActivity {
     }
     public static final int doctorsmenu = 0;
     public static final int healthhistory = 0;
+    public static final int back8 = 0;
+
 
 
     public void doctorlistClick(View v){
@@ -27,5 +29,9 @@ public class PatientHomeActivity extends AppCompatActivity {
         Intent intent = new Intent(this,HealthhistoryActivity.class);
         startActivityForResult(intent,healthhistory);
 
+    }
+    public void back8Click(View v) {
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivityForResult(intent,back8);
     }
 }

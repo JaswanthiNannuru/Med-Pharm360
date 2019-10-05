@@ -15,10 +15,16 @@ public class AppointmentActivity extends AppCompatActivity {
     }
 
     public static final int appointment = 0;
+    public static final int back10 = 0;
 
     public void conformClick(View v) {
         Intent intent = new Intent(this, AppCompatActivity.class);
         startActivityForResult(intent, appointment);
 
     }
+    public void back10Click(View v) {
+        Intent intent = new Intent(this, DoctorslistActivity.class);
+        startActivityForResult(intent,back10);
+    }
+
 }

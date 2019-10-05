@@ -16,6 +16,7 @@ public class DoctorslistActivity extends AppointmentActivity{
     public static final int doctor1 =  0;
     public static final int doctor2 =  0;
     public static final int doctor3 =  0;
+    public static final int back9 = 0;
 
 
     public void doctor1Click(View v){
@@ -33,6 +34,10 @@ public class DoctorslistActivity extends AppointmentActivity{
         Intent intent = new Intent(this, AppointmentActivity.class);
         startActivityForResult(intent,doctor3);
 
+    }
+    public void back9Click(View v) {
+        Intent intent = new Intent(this, PatientHomeActivity.class);
+        startActivityForResult(intent,back9);
     }
 
 }

@@ -11,12 +11,17 @@ public class HealthhistoryActivity extends MainActivity {
         setContentView(R.layout.activity_healthhistory);
     }
     public static final int healthlogin = 0;
+    public static final int back11 = 0;
 
 
     public void okCkick(View v){
         Intent intent = new Intent(this,DoctorslistActivity.class);
         startActivityForResult(intent,healthlogin);
 
+    }
+    public void back11Click(View v) {
+        Intent intent = new Intent(this, HistoryloginActivity.class);
+        startActivityForResult(intent,back11);
     }
 
 }
