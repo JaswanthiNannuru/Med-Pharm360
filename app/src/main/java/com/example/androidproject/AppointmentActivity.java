@@ -1,5 +1,6 @@
 package com.example.androidproject;
 
+<<<<<<< HEAD
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -20,4 +21,7 @@ public class AppointmentActivity extends AppCompatActivity {
 
         }
 
+=======
+public class AppointmentActivity {
+>>>>>>> 201f7360c89e888091ad340d3b182bab93117e7c
 }
