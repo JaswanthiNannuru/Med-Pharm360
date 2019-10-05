@@ -18,7 +18,7 @@ public class PatientSignupActivity extends PatientHomeActivity {
     }
 
     public static final int Signup1 = 0;
-    public static final int back4 = 0;
+    public static final int back3 = 0;
 
 
 
@@ -27,9 +27,9 @@ public class PatientSignupActivity extends PatientHomeActivity {
         startActivityForResult(intent, Signup1);
     }
 
-    public void back4Click(View v) {
+    public void back3Click(View v) {
         Intent intent = new Intent(this, MainActivity.class);
-        startActivityForResult(intent, back4);
+        startActivityForResult(intent, back3);
     }
 
 

@@ -98,11 +98,11 @@
         app:layout_constraintVertical_bias="0.40" />
 
     <Button
-        android:id="@+id/back4"
+        android:id="@+id/back3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="go back"
-        android:onClick="back4Click"
+        android:onClick="back3Click"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.99"
         app:layout_constraintLeft_toLeftOf="parent"

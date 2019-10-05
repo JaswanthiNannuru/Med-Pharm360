@@ -4,7 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class DoctorSignupActivity extends DoctorHomeActivity {
+public class DoctorSignupActivity extends SelectionActivity {
 
 
         @Override
@@ -24,6 +24,8 @@ public class DoctorSignupActivity extends DoctorHomeActivity {
         startActivityForResult(intent,Signup);
 
     }
+
+
 
 }
 
