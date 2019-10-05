@@ -14,18 +14,18 @@ public class PatientSignupActivity extends PatientHomeActivity {
     }
 
 
-   public void setContentView(int activity_patientsignup) {
-   }
+    public void setContentView(int activity_patientsignup) {
+    }
 
     public static final int Signup1 = 0;
 
 
-    public void patientSignup(View v){
+    public void patientSignup(View v) {
         Intent intent = new Intent(this, PatientHomeActivity.class);
-        startActivityForResult(intent,Signup1);
+        startActivityForResult(intent, Signup1);
     }
 
-
+}
 
 
 
