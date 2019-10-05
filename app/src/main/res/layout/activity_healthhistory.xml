@@ -3,11 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    >
 
 
     <Button
-        android:id="@+id/button10"
+        android:id="@+id/hhet1"
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:onClick="patient1Click"
@@ -21,7 +21,7 @@
         app:layout_constraintVertical_bias="0.024" />
 
     <Button
-        android:id="@+id/button11"
+        android:id="@+id/hhet2"
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:onClick="patient2Click"
@@ -35,7 +35,7 @@
         app:layout_constraintVertical_bias="0.172" />
 
     <Button
-        android:id="@+id/button12"
+        android:id="@+id/hhet3"
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:onClick="patient3Click"
