@@ -24,7 +24,7 @@
         android:layout_width="210dp"
         android:layout_height="46dp"
         android:layout_marginStart="84dp"
-        android:hint="doctorsdata displayed here"
+        android:hint="patients data displayed here"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintLeft_toLeftOf="parent"
