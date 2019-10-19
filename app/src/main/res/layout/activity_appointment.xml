@@ -29,8 +29,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.415" />
 
-    <RadioButton
-        android:id="@+id/radioButton"
+    <CheckBox
+        android:id="@+id/checkbox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="02:00pm-02:30pm"
@@ -41,8 +41,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.7" />
 
-    <RadioButton
-        android:id="@+id/radioButton2"
+    <CheckBox
+        android:id="@+id/checkbox2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="02:30pm-03:00pm"
@@ -53,8 +53,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.75" />
 
-    <RadioButton
-        android:id="@+id/radioButton3"
+    <CheckBox
+        android:id="@+id/checkbox3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="03:00pm-03:30pm"
@@ -65,8 +65,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.8" />
 
-    <RadioButton
-        android:id="@+id/radioButton4"
+    <CheckBox
+        android:id="@+id/checkbox4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="03:30pm-42:30pm"
@@ -78,12 +78,12 @@
         app:layout_constraintVertical_bias="0.85" />
 
     <Button
-        android:id="@+id/conformb"
+        android:id="@+id/confirm"
         android:layout_width="200dp"
         android:layout_height="40dp"
         android:layout_marginLeft="100dp"
         android:onClick="conform1Click"
-        android:text="Conform"
+        android:text="Schedule Appointment"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.005"
         app:layout_constraintLeft_toLeftOf="parent"
