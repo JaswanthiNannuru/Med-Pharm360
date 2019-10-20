@@ -3,49 +3,49 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".DoctorslistActivity">
 
 
     <Button
         android:id="@+id/doctor1tv"
-        android:layout_width="match_parent"
+        android:layout_width="100dp"
         android:layout_height="80dp"
         android:onClick="doctor1Click"
         android:text="Doctor1"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintHorizontal_bias="0.311"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_bias="0.024"
         tools:ignore="OnClick" />
 
     <Button
         android:id="@+id/doctor2tv"
-        android:layout_width="match_parent"
+        android:layout_width="100dp"
         android:layout_height="80dp"
-        android:text="Doctor2"
         android:onClick="doctor2Click"
+        android:text="Doctor2"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintHorizontal_bias="0.311"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.15"
+        app:layout_constraintVertical_bias="0.199"
         tools:ignore="OnClick" />
 
     <Button
         android:id="@+id/doctor3tv"
-        android:layout_width="match_parent"
+        android:layout_width="100dp"
         android:layout_height="80dp"
-        android:text="Doctor3"
         android:onClick="doctor3Click"
+        android:text="Doctor3"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintHorizontal_bias="0.311"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.30"
+        app:layout_constraintVertical_bias="0.373"
         tools:ignore="OnClick" />
 
     <Button
@@ -61,6 +61,59 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.99"
         tools:ignore="OnClick" />
+
+    <TextView
+        android:id="@+id/InfoTV"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:text="Displays Doctor info"
+        android:textColor="#0F0101"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.668" />
+
+    <Button
+        android:id="@+id/buttonProceed1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="proceed1"
+        android:text="Proceed"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.823"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.046" />
+
+    <Button
+        android:id="@+id/buttonProceed2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="proceed2"
+        android:text="Proceed"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.823"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.19" />
+
+    <Button
+        android:id="@+id/buttonProceed3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="proceed3"
+        android:text="Proceed"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.823"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.374" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -21,6 +21,9 @@ public class AppointmentActivity extends AppCompatActivity {
 
     public void conform1Click(View v) {
 
+        TextView d = findViewById(R.id.doctordatatv);
+        d.setText("Sanjana Baswa Dermetologist ");
+
         CheckBox c1 = findViewById(R.id.checkboxMain00);
         CheckBox c2 = findViewById(R.id.checkboxMain2);
         CheckBox c3 = findViewById(R.id.checkboxMain3);

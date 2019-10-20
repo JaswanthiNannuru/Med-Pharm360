@@ -4,6 +4,7 @@ package com.example.androidproject;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -20,22 +21,46 @@ public class DoctorslistActivity extends AppointmentActivity{
 
 
     public void doctor1Click(View v){
-        Intent intent = new Intent(this, AppointmentActivity.class);
-        startActivityForResult(intent,doctor1);
+        TextView t = findViewById(R.id.InfoTV);
+        t.setText("willam , Dermitologist");
+
 
     }
     public void doctor2Click(View v){
-        Intent intent = new Intent(this, AppointmentActivity.class);
-        startActivityForResult(intent,doctor2);
+        TextView t = findViewById(R.id.InfoTV);
+        t.setText("Dheeraj , Cardiologist");
+
 
     }
 
     public void doctor3Click(View v){
-        Intent intent = new Intent(this, AppointmentActivity.class);
-        startActivityForResult(intent,doctor3);
+        TextView t = findViewById(R.id.InfoTV);
+        t.setText("Maria , Oncologist");
+
+
 
 
     }
+
+    public void proceed1(View v){
+        Intent intent = new Intent(this, AppointmentActivity.class);
+        startActivityForResult(intent,doctor1);
+
+
+    }
+    public void proceed2(View v){
+        Intent intent = new Intent(this, AppointmentActivity.class);
+        startActivityForResult(intent,doctor2);
+
+    }
+    public void proceed3(View v){
+        Intent intent = new Intent(this, AppointmentActivity.class);
+        startActivityForResult(intent,doctor3);
+
+    }
+
+
+
     public void back9Click(View v) {
         Intent intent = new Intent(this, PatientHomeActivity.class);
         startActivityForResult(intent,back9);
