@@ -6,7 +6,7 @@
     >
 
     <Button
-        android:id="@+id/hhet1"
+        android:id="@+id/patient1BTN"
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:text="patient1"
@@ -19,7 +19,7 @@
         app:layout_constraintVertical_bias="0.024" />
 
     <Button
-        android:id="@+id/hhet2"
+        android:id="@+id/patient2BTN"
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:text="patient2"
@@ -32,7 +32,7 @@
         app:layout_constraintVertical_bias="0.172" />
 
     <Button
-        android:id="@+id/hhet3"
+        android:id="@+id/patient3BTN"
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:text="patient3"
@@ -46,7 +46,7 @@
 
 
     <Button
-        android:id="@+id/back11"
+        android:id="@+id/back11BTN"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="go back"

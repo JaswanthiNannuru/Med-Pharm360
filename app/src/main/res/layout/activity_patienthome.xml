@@ -7,7 +7,7 @@
 
 
     <Button
-        android:id="@+id/hhet1"
+        android:id="@+id/patient1BTN"
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:onClick="doctorlistClick"
@@ -22,7 +22,7 @@
         tools:ignore="OnClick" />
 
     <Button
-        android:id="@+id/hhet2"
+        android:id="@+id/patient2BTN"
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:onClick="healthhistoryClick"
@@ -36,7 +36,7 @@
         app:layout_constraintVertical_bias="0.172"
         tools:ignore="OnClick" />
     <Button
-        android:id="@+id/back8"
+        android:id="@+id/back8BTN"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="go back"

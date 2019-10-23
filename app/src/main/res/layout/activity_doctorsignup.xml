@@ -6,7 +6,11 @@
     tools:context=".MainActivity">
 
     <EditText
+<<<<<<< HEAD
         android:id="@+id/doctornameET"
+=======
+        android:id="@+id/patientnameET"
+>>>>>>> a207bb5ffac22b82978b5f173e1ef0c978ed2719
         android:layout_width="200dp"
         android:layout_height="40dp"
         android:layout_marginLeft="100dp"
@@ -36,7 +40,11 @@
         app:layout_constraintVertical_bias="0.133" />
 
     <EditText
+<<<<<<< HEAD
         android:id="@+id/doctormailidET"
+=======
+        android:id="@+id/patientmailidET"
+>>>>>>> a207bb5ffac22b82978b5f173e1ef0c978ed2719
         android:layout_width="200dp"
         android:layout_height="40dp"
         android:layout_marginLeft="100dp"
@@ -52,7 +60,11 @@
         app:layout_constraintVertical_bias="1.1" />
 
     <EditText
+<<<<<<< HEAD
         android:id="@+id/doctorphnoET"
+=======
+        android:id="@+id/patientphnoET"
+>>>>>>> a207bb5ffac22b82978b5f173e1ef0c978ed2719
         android:layout_width="200dp"
         android:layout_height="40dp"
         android:layout_marginLeft="100dp"
@@ -67,7 +79,11 @@
         app:layout_constraintVertical_bias="0.255" />
 
     <EditText
+<<<<<<< HEAD
         android:id="@+id/doctorpasswordET"
+=======
+        android:id="@+id/patientpasswordET"
+>>>>>>> a207bb5ffac22b82978b5f173e1ef0c978ed2719
         android:layout_width="200dp"
         android:layout_height="40dp"
         android:layout_marginLeft="100dp"
@@ -98,7 +114,11 @@
 
 
     <Button
+<<<<<<< HEAD
         android:id="@+id/doctorsignupBTN"
+=======
+        android:id="@+id/patientsignupBTN"
+>>>>>>> a207bb5ffac22b82978b5f173e1ef0c978ed2719
         android:layout_width="100dp"
         android:layout_height="40dp"
         android:layout_marginLeft="100dp"

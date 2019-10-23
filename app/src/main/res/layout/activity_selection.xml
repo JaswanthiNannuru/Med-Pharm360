@@ -7,7 +7,7 @@
     tools:context=".SelectionActivity">
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/doctorBTN"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="doctorClick"
@@ -20,7 +20,7 @@
         app:layout_constraintVertical_bias="0.35" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/patientBTN"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="onPatient"
@@ -32,7 +32,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.45" />
     <Button
-        android:id="@+id/back1"
+        android:id="@+id/back1BTN"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="go back"
