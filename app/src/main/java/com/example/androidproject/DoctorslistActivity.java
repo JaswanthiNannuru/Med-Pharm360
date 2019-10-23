@@ -6,8 +6,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 public class DoctorslistActivity extends AppointmentActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,20 +19,20 @@ public class DoctorslistActivity extends AppointmentActivity{
 
 
     public void doctor1Click(View v){
-        TextView t = findViewById(R.id.InfoTV);
+        TextView t = findViewById(R.id.DoctorinfoTV);
         t.setText("willam , Dermitologist");
 
 
     }
     public void doctor2Click(View v){
-        TextView t = findViewById(R.id.InfoTV);
+        TextView t = findViewById(R.id.DoctorinfoTV);
         t.setText("Dheeraj , Cardiologist");
 
 
     }
 
     public void doctor3Click(View v){
-        TextView t = findViewById(R.id.InfoTV);
+        TextView t = findViewById(R.id.DoctorinfoTV);
         t.setText("Maria , Oncologist");
 
 

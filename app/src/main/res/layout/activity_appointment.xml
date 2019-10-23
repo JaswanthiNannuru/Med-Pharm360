@@ -6,7 +6,7 @@
 
 
     <TextView
-        android:id="@+id/doctordatatv"
+        android:id="@+id/doctordataTV"
         android:layout_width="match_parent"
         android:layout_height="150dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -17,7 +17,7 @@
         app:layout_constraintVertical_bias="0.02" />
 
     <CalendarView
-        android:id="@+id/calendarView"
+        android:id="@+id/appointmentCV"
         android:layout_width="match_parent"
         android:layout_height="300dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -25,10 +25,13 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.399" />
+        app:layout_constraintVertical_bias="0.399"
+        tools:ignore="DuplicateIds" />
+
+
 
     <CheckBox
-        android:id="@+id/checkboxMain00"
+        android:id="@+id/checkbox1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="02:00pm-02:30pm"
@@ -40,7 +43,7 @@
         app:layout_constraintVertical_bias="0.7" />
 
     <CheckBox
-        android:id="@+id/checkboxMain2"
+        android:id="@+id/checkbox2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="02:30pm-03:00pm"
@@ -52,7 +55,7 @@
         app:layout_constraintVertical_bias="0.75" />
 
     <CheckBox
-        android:id="@+id/checkboxMain3"
+        android:id="@+id/checkbox3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="03:00pm-03:30pm"
@@ -64,7 +67,7 @@
         app:layout_constraintVertical_bias="0.8" />
 
     <CheckBox
-        android:id="@+id/checkboxMainA"
+        android:id="@+id/checkbox4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="03:30pm-42:30pm"
@@ -76,7 +79,7 @@
         app:layout_constraintVertical_bias="0.85" />
 
     <Button
-        android:id="@+id/confirm"
+        android:id="@+id/confirmappointmentBTN"
         android:layout_width="200dp"
         android:layout_height="40dp"
         android:layout_marginLeft="100dp"
@@ -90,7 +93,7 @@
         app:layout_constraintVertical_bias="0.92" />
 
     <Button
-        android:id="@+id/back10"
+        android:id="@+id/back10BTN"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="go back"
@@ -101,18 +104,6 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.99" />
-
-    <TextView
-        android:id="@+id/confirmTV"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.045"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.977" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

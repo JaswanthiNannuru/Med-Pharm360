@@ -21,14 +21,14 @@ public class AppointmentActivity extends AppCompatActivity {
 
     public void conform1Click(View v) {
 
-        TextView d = findViewById(R.id.doctordatatv);
+        TextView d = findViewById(R.id.doctordataTV);
         d.setText("Sanjana Baswa Dermetologist ");
 
-        CheckBox c1 = findViewById(R.id.checkboxMain00);
-        CheckBox c2 = findViewById(R.id.checkboxMain2);
-        CheckBox c3 = findViewById(R.id.checkboxMain3);
-        CheckBox c4 = findViewById(R.id.checkboxMainA);
-        TextView tv = findViewById(R.id.confirmTV);
+        CheckBox c1 = findViewById(R.id.checkbox1);
+        CheckBox c2 = findViewById(R.id.checkbox2);
+        CheckBox c3 = findViewById(R.id.checkbox3);
+        CheckBox c4 = findViewById(R.id.checkbox4);
+        TextView tv = findViewById(R.id.doctordataTV);
 
         if(c1.isChecked() || c2.isChecked() || c3.isChecked() || c4.isChecked())
         {

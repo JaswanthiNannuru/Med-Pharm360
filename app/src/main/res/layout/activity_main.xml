@@ -6,7 +6,7 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/signupBTN"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="signupClick"
@@ -19,6 +19,7 @@
         app:layout_constraintVertical_bias="0.708" />
 
     <TextView
+        android:id="@+id/appnameTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="MedPharm360"
@@ -47,7 +48,7 @@
         app:layout_constraintVertical_bias="0.332" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/doctorpasswordET"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -61,7 +62,7 @@
         app:layout_constraintVertical_bias="0.448" />
 
     <Button
-        android:id="@+id/doctorbutton"
+        android:id="@+id/doctorloginBTN"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="doctorLogin"
@@ -74,7 +75,7 @@
         app:layout_constraintVertical_bias="0.566" />
 
     <Button
-        android:id="@+id/patientbutton"
+        android:id="@+id/patientloginBTN"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="patientLogin"
