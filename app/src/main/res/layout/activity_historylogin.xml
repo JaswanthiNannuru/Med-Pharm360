@@ -4,7 +4,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     >
+
     <SearchView
+        android:id="@+id/patientsSV"
         android:layout_width="250dp"
         android:layout_height="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -15,7 +17,7 @@
         app:layout_constraintVertical_bias="0.40" />
 
     <Button
-        android:id="@+id/button9"
+        android:id="@+id/patientssearchBTN"
         android:layout_width="100dp"
         android:layout_height="40dp"
         android:layout_marginLeft="100dp"
@@ -30,7 +32,7 @@
 
 
     <Button
-        android:id="@+id/back6"
+        android:id="@+id/back6BTN"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="go back"
