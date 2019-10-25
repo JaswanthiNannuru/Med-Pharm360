@@ -23,8 +23,10 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-    public void doctorLogin(View v){
-        EditText j = findViewById(R.id.usernameET);
+    public void doctorLogin(View v) {
+        /*
+
+       EditText j = findViewById(R.id.usernameET);
         String a = j.getText().toString();
 
         EditText w = findViewById(R.id.passwordET);
@@ -44,29 +46,37 @@ public class MainActivity extends AppCompatActivity {
        // Intent intent = new Intent(this,DoctorHomeActivity.class);
        // startActivityForResult(intent,DoctorLogin);
 
-        EditText username = (EditText)findViewById(R.id.usernameET);
-        EditText password = (EditText)findViewById(R.id.passwordET);
+  */
+        EditText username = (EditText) findViewById(R.id.usernameET);
+        EditText password = (EditText) findViewById(R.id.passwordET);
 
-        if(username.getText().toString().equals("doctor1") && password.getText().toString().equals("doctor1"))
-        {
-            //correcct password
+        if (username.getText().toString().equals("doctor1") && password.getText().toString().equals("doctor1")||
+                username.getText().toString().equals("doctor2") && password.getText().toString().equals("doctor2")||
+                username.getText().toString().equals("doctor3") && password.getText().toString().equals("doctor3")) {
+            //correct password
             Toast.makeText(getApplicationContext(),
-                    "Redirecting...",Toast.LENGTH_SHORT).show();
-        }else
-            {if (username.getText() == null || password.getText() == null) {
-            // Credentials not entered
-            Toast.makeText(getApplicationContext(),
-                    "Enter Credentials", Toast.LENGTH_SHORT).show();
+                    "Redirecting...", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(this, DoctorHomeActivity.class);
+            startActivityForResult(intent, DoctorLogin);
         } else {
-            //incorrect password
-            Toast.makeText(getApplicationContext(), "Wrong Credentials", Toast.LENGTH_SHORT).show();
+            if (username.getText() == null || password.getText() == null) {
+                // Credentials not entered
+                Toast.makeText(getApplicationContext(),
+                        "Enter your Credentials", Toast.LENGTH_SHORT).show();
+                //Intent intent1 = new Intent(this,MainActivity.class);
+                // startActivityForResult(intent1,DoctorLogin);
+            } else {
+                //incorrect password
+                Toast.makeText(getApplicationContext(), "Wrong Credentials", Toast.LENGTH_SHORT).show();
+                // Intent intent1 = new Intent(this,MainActivity.class);
+                // startActivityForResult(intent1,DoctorLogin);
+            }
         }
-        }
-
-
-
     }
+
     public void patientLogin(View v){
+/*
+
         EditText j = findViewById(R.id.usernameET);
         String a = j.getText().toString();
 
@@ -84,30 +94,40 @@ public class MainActivity extends AppCompatActivity {
         }
        // Intent intent = new Intent(this,PatientHomeActivity.class);
         //startActivityForResult(intent,PatientLogin);
+*/
 
         EditText username = (EditText)findViewById(R.id.usernameET);
         EditText password = (EditText)findViewById(R.id.passwordET);
 
-        if(username.getText().toString().equals("patient1") && password.getText().toString().equals("patient1"))
+        if(username.getText().toString().equals("patient1") && password.getText().toString().equals("patient1")||
+                username.getText().toString().equals("patient2") && password.getText().toString().equals("patient2")||
+                username.getText().toString().equals("patient3") && password.getText().toString().equals("patient3"))
         {
             //correct password
             Toast.makeText(getApplicationContext(),
                     "Redirecting...",Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(this,PatientHomeActivity.class);
+            startActivityForResult(intent,PatientLogin);
         }
         else {
             if (username.getText() == null || password.getText() == null) {
                 // Credentials not entered
                 Toast.makeText(getApplicationContext(),
                         "Enter Credentials", Toast.LENGTH_SHORT).show();
+               // Intent intent = new Intent(this,MainActivity.class);
+               // startActivityForResult(intent,PatientLogin);
             } else {
                 //incorrect password
                 Toast.makeText(getApplicationContext(), "Wrong Credentials", Toast.LENGTH_SHORT).show();
+               // Intent intent = new Intent(this,MainActivity.class);
+              //  startActivityForResult(intent,PatientLogin);
             }
         }
     }
     public void signupClick(View v){
         Intent intent = new Intent(this,SelectionActivity.class);
         startActivityForResult(intent,Signup);
+
 
     }
 

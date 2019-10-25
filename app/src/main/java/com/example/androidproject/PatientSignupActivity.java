@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -28,21 +29,21 @@ public class PatientSignupActivity extends AppCompatActivity {
 
     public void patientSignup(View v) {
         EditText q= findViewById(R.id.patientnameET);
-        String e = q.getText().toString();
+        String f = q.getText().toString();
 
         EditText r= findViewById(R.id.patientmailidET);
-        String f = r.getText().toString();
+        String g = r.getText().toString();
 
         EditText s= findViewById(R.id.patientnameET);
-        String g = s.getText().toString();
+        String h = s.getText().toString();
 
         EditText i= findViewById(R.id.patientnameET);
-        String h = i.getText().toString();
+        String j = i.getText().toString();
 
         EditText k= findViewById(R.id.patientnameET);
-        String p = k.getText().toString();
+        String l = k.getText().toString();
 
-        if(e.isEmpty()||f.isEmpty()||g.isEmpty()||h.isEmpty()||p.isEmpty())
+        if(f.isEmpty()||g.isEmpty()||h.isEmpty()||j.isEmpty()||l.isEmpty())
         {
             TextView o=findViewById(R.id.EnterdetailsTV2);
             o.setText("enter the details");
@@ -51,6 +52,8 @@ public class PatientSignupActivity extends AppCompatActivity {
         {
             Intent intent = new Intent(this, MainActivity.class);
             startActivityForResult(intent, Signup1);
+            Toast.makeText(getApplicationContext(),
+                    "Please login again", Toast.LENGTH_SHORT).show();
         }
     }
 
