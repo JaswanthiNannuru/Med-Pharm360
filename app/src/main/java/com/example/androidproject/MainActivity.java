@@ -24,9 +24,9 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void doctorLogin(View v){
-<<<<<<< HEAD
-=======
-        EditText j = findViewById(R.id.usernameET);
+        /*
+
+       EditText j = findViewById(R.id.usernameET);
         String a = j.getText().toString();
 
         EditText w = findViewById(R.id.passwordET);
@@ -45,8 +45,8 @@ public class MainActivity extends AppCompatActivity {
 
        // Intent intent = new Intent(this,DoctorHomeActivity.class);
        // startActivityForResult(intent,DoctorLogin);
->>>>>>> bbb0818c4a9b586abc8c1df4559fbde35e392e95
 
+  */
         EditText username = (EditText)findViewById(R.id.usernameET);
         EditText password = (EditText)findViewById(R.id.passwordET);
 
@@ -63,23 +63,19 @@ public class MainActivity extends AppCompatActivity {
             // Credentials not entered
             Toast.makeText(getApplicationContext(),
                     "Enter your Credentials", Toast.LENGTH_SHORT).show();
-                Intent intent1 = new Intent(this,MainActivity.class);
-                startActivityForResult(intent1,DoctorLogin);
+                //Intent intent1 = new Intent(this,MainActivity.class);
+               // startActivityForResult(intent1,DoctorLogin);
         } else {
             //incorrect password
             Toast.makeText(getApplicationContext(), "Wrong Credentials", Toast.LENGTH_SHORT).show();
-                Intent intent1 = new Intent(this,MainActivity.class);
-                startActivityForResult(intent1,DoctorLogin);
+               // Intent intent1 = new Intent(this,MainActivity.class);
+               // startActivityForResult(intent1,DoctorLogin);
         }
         }
-
-
-
     }
     public void patientLogin(View v){
-<<<<<<< HEAD
+/*
 
-=======
         EditText j = findViewById(R.id.usernameET);
         String a = j.getText().toString();
 
@@ -97,7 +93,7 @@ public class MainActivity extends AppCompatActivity {
         }
        // Intent intent = new Intent(this,PatientHomeActivity.class);
         //startActivityForResult(intent,PatientLogin);
->>>>>>> bbb0818c4a9b586abc8c1df4559fbde35e392e95
+*/
 
         EditText username = (EditText)findViewById(R.id.usernameET);
         EditText password = (EditText)findViewById(R.id.passwordET);
@@ -115,19 +111,20 @@ public class MainActivity extends AppCompatActivity {
                 // Credentials not entered
                 Toast.makeText(getApplicationContext(),
                         "Enter Credentials", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(this,MainActivity.class);
-                startActivityForResult(intent,PatientLogin);
+               // Intent intent = new Intent(this,MainActivity.class);
+               // startActivityForResult(intent,PatientLogin);
             } else {
                 //incorrect password
                 Toast.makeText(getApplicationContext(), "Wrong Credentials", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(this,MainActivity.class);
-                startActivityForResult(intent,PatientLogin);
+               // Intent intent = new Intent(this,MainActivity.class);
+              //  startActivityForResult(intent,PatientLogin);
             }
         }
     }
     public void signupClick(View v){
         Intent intent = new Intent(this,SelectionActivity.class);
         startActivityForResult(intent,Signup);
+        
 
     }
 
