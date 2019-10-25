@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -23,6 +24,28 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void doctorLogin(View v){
+<<<<<<< HEAD
+=======
+        EditText j = findViewById(R.id.usernameET);
+        String a = j.getText().toString();
+
+        EditText w = findViewById(R.id.passwordET);
+        String b = w.getText().toString();
+
+        if(a.isEmpty() || b.isEmpty() )
+        {
+            TextView t = findViewById(R.id.EnterdetailsET3);
+            t.setText("enter the details");
+        }
+        else
+        {
+            Intent intent = new Intent(this,DoctorHomeActivity.class);
+            startActivityForResult(intent,DoctorLogin);
+        }
+
+       // Intent intent = new Intent(this,DoctorHomeActivity.class);
+       // startActivityForResult(intent,DoctorLogin);
+>>>>>>> bbb0818c4a9b586abc8c1df4559fbde35e392e95
 
         EditText username = (EditText)findViewById(R.id.usernameET);
         EditText password = (EditText)findViewById(R.id.passwordET);
@@ -54,7 +77,27 @@ public class MainActivity extends AppCompatActivity {
 
     }
     public void patientLogin(View v){
+<<<<<<< HEAD
 
+=======
+        EditText j = findViewById(R.id.usernameET);
+        String a = j.getText().toString();
+
+        EditText w = findViewById(R.id.passwordET);
+        String b = w.getText().toString();
+
+        if(a.isEmpty() || b.isEmpty() )
+        {
+            TextView t = findViewById(R.id.EnterdetailsET3);
+            t.setText("enter the details");
+        }
+        else{
+            Intent intent = new Intent(this,PatientHomeActivity.class);
+            startActivityForResult(intent,PatientLogin);
+        }
+       // Intent intent = new Intent(this,PatientHomeActivity.class);
+        //startActivityForResult(intent,PatientLogin);
+>>>>>>> bbb0818c4a9b586abc8c1df4559fbde35e392e95
 
         EditText username = (EditText)findViewById(R.id.usernameET);
         EditText password = (EditText)findViewById(R.id.passwordET);
