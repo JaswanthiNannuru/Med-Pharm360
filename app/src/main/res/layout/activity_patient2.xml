@@ -10,6 +10,9 @@
         android:layout_height="500dp"
         android:hint="patient2 data"
         android:textSize="24sp"
+        android:text="-Name: Maria \n-Age: 30 \n-BloodGroup:O+
+        \n-Problem: Coronary Artery Disease \n-Appointment Date:09/22/2019
+        \n-Medication Suggested: Coronary stent, Coronary Angio Plasty"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0"
         app:layout_constraintLeft_toLeftOf="parent"
