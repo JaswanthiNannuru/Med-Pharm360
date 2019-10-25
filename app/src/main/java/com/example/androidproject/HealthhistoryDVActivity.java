@@ -14,17 +14,17 @@ public class HealthhistoryDVActivity extends MainActivity {
     public static final int back11 = 0;
 
     public void patient1Click(View v){
-        Intent intent = new Intent(this, PatientsrecordActivity.class);
+        Intent intent = new Intent(this, Patient1Activity.class);
         startActivityForResult(intent,records);
 
     }
     public void patient2Click(View v){
-        Intent intent = new Intent(this, PatientsrecordActivity.class);
+        Intent intent = new Intent(this, Patient2Activity.class);
         startActivityForResult(intent,records);
 
     }
     public void patient3Click(View v) {
-        Intent intent = new Intent(this, PatientsrecordActivity.class);
+        Intent intent = new Intent(this, Patient3Activity.class);
         startActivityForResult(intent, records);
     }
 

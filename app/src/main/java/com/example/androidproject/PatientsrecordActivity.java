@@ -13,7 +13,6 @@ public class PatientsrecordActivity extends AppCompatActivity {
         setContentView(R.layout.activity_patientsrecord);
     }
     public static final int back12 = 0;
-
     public void back12Click(View v) {
         Intent intent = new Intent(this, DoctorHomeActivity.class);
         startActivityForResult(intent,back12);

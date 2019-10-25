@@ -31,21 +31,21 @@ public class HistoryloginActivity extends AppCompatActivity {
    // }
 
     public void patient1(View v){
-        Intent intent = new Intent(this, HealthhistoryPVActivity.class);
+        Intent intent = new Intent(this, Patient1Activity.class);
         startActivityForResult(intent,patient1);
     }
-    public void Patient2(View v){
-        Intent intent = new Intent(this, HealthhistoryPVActivity.class);
+    public void patient2(View v){
+        Intent intent = new Intent(this, Patient2Activity.class);
         startActivityForResult(intent,patient2);
 
     }
-    public void Patient3(View v){
-        Intent intent = new Intent(this, HealthhistoryPVActivity.class);
+    public void patient3(View v){
+        Intent intent = new Intent(this, Patient3Activity.class);
         startActivityForResult(intent,patient3);
 
     }
     public void back6Click(View v) {
-        Intent intent = new Intent(this, HistoryloginActivity.class);
+        Intent intent = new Intent(this, DoctorHomeActivity.class);
         startActivityForResult(intent,back6);
     }
 
