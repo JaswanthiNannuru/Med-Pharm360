@@ -9,6 +9,7 @@
         android:id="@+id/doctordataTV"
         android:layout_width="match_parent"
         android:layout_height="50dp"
+        android:textColor="#7A1B1B"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
