@@ -34,16 +34,13 @@ public class AppointmentActivity extends AppCompatActivity {
         if(c1.isChecked() || c2.isChecked() || c3.isChecked() || c4.isChecked())
         {
 
-            tv.setText("Confirmed ");
+            tv.setText("Appointment scheduled ");
 
         }
         else
         {
             tv.setText("Please select time ");
         }
-
-
-
 
     }
     public void scheduleClick(View v)

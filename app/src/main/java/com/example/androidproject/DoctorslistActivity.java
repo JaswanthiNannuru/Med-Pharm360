@@ -24,10 +24,6 @@ public class DoctorslistActivity extends AppointmentActivity{
     public void proceed1(View v){
         Intent intent = new Intent(this, AppointmentActivity.class);
         startActivityForResult(intent,doctor1);
-
-
-
-
     }
     public void proceed2(View v){
         Intent intent = new Intent(this, AppointmentActivity.class);
@@ -39,9 +35,6 @@ public class DoctorslistActivity extends AppointmentActivity{
         startActivityForResult(intent,doctor3);
 
     }
-
-
-
 
     public void back9Click(View v) {
         Intent intent = new Intent(this, PatientHomeActivity.class);
@@ -64,7 +57,7 @@ public class DoctorslistActivity extends AppointmentActivity{
     public void doctor3(View v)
     {
         TextView t = findViewById(R.id.DoctorinfoTV);
-        t.setText("cardialogist");
+        t.setText("cardiologist");
 
     }
 }
