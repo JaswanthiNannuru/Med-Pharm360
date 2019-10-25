@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -13,19 +15,36 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
-    public static final int Login1 =  0;
-    public static final int Login2 =  0;
+    public static final int DoctorLogin =  0;
+    public static final int PatientLogin =  0;
 
     public static final int Signup = 0;
 
+
+
     public void doctorLogin(View v){
         Intent intent = new Intent(this,DoctorHomeActivity.class);
-        startActivityForResult(intent,Login1);
+        startActivityForResult(intent,DoctorLogin);
+
+        EditText username = (EditText)findViewById(R.id.usernameET);
+        EditText password = (EditText)findViewById(R.id.passwordET);
+
+        if(username.getText().toString().equals("doctor1") && password.getText().toString().equals("doctor1"))
+        {
+            //correcct password
+            Toast.makeText(getApplicationContext(),
+                    "Redirecting...",Toast.LENGTH_SHORT).show();
+        }else {
+            //incorrecct password
+            Toast.makeText(getApplicationContext(), "Wrong Credentials", Toast.LENGTH_SHORT).show();
+        }
+
+
 
     }
     public void patientLogin(View v){
         Intent intent = new Intent(this,PatientHomeActivity.class);
-        startActivityForResult(intent,Login2);
+        startActivityForResult(intent,PatientLogin);
 
     }
     public void signupClick(View v){
@@ -33,4 +52,5 @@ public class MainActivity extends AppCompatActivity {
         startActivityForResult(intent,Signup);
 
     }
+
 }
