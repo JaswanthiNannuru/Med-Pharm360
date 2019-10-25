@@ -12,7 +12,9 @@ public class HistoryloginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_historylogin);
     }
-
+    public static final int patient1 =  0;
+    public static final int patient2 =  0;
+    public static final int patient3 =  0;
     public static final int healthlogin = 0;
     public static final int back6 = 0;
 
@@ -22,10 +24,25 @@ public class HistoryloginActivity extends AppCompatActivity {
         //startActivity(intent);
 
     }*/
-    public void onSearch(View v)
-    {
-        Intent intent = new Intent(this, PatientsrecordActivity.class);
-        startActivityForResult(intent,1);
+    //public void onSearch(View v)
+  //  {
+     //   Intent intent = new Intent(this, PatientsrecordActivity.class);
+      //  startActivityForResult(intent,1);
+   // }
+
+    public void patient1(View v){
+        Intent intent = new Intent(this, HealthhistoryPVActivity.class);
+        startActivityForResult(intent,patient1);
+    }
+    public void Patient2(View v){
+        Intent intent = new Intent(this, HealthhistoryPVActivity.class);
+        startActivityForResult(intent,patient2);
+
+    }
+    public void Patient3(View v){
+        Intent intent = new Intent(this, HealthhistoryPVActivity.class);
+        startActivityForResult(intent,patient3);
+
     }
     public void back6Click(View v) {
         Intent intent = new Intent(this, HistoryloginActivity.class);
