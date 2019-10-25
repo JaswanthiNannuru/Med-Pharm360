@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class DoctorSignupActivity extends SelectionActivity {
 
@@ -18,34 +19,46 @@ public class DoctorSignupActivity extends SelectionActivity {
    /* public void setContentView(int activity_doctorsignup) {
     }*/
 
-    public static final int Signup = 0;
+    public static final int doctorSignup = 0;
     public static final int back2 = 0;
 
 
     public void doctorSignup(View v){
-        EditText u = findViewById(R.id.doctornameET);
-        String a = u.getText().toString();
+        EditText username = findViewById(R.id.doctornameET);
+        String a = username.getText().toString();
 
-        EditText x = findViewById(R.id.departmentET);
-        String b = x.getText().toString();
+        EditText department = findViewById(R.id.departmentET);
+        String b = department.getText().toString();
 
-        EditText y = findViewById(R.id.doctorphnoET);
-        String c = y.getText().toString();
+        EditText phno = findViewById(R.id.doctorphnoET);
+        String c = phno.getText().toString();
 
-        EditText z = findViewById(R.id.doctorpasswordET);
-        String d = z.getText().toString();
+        EditText doctorpassword = findViewById(R.id.doctorpasswordET);
+        String d = doctorpassword.getText().toString();
+
+        EditText doctorconfirmpswrd = findViewById(R.id.doctorpasswordET);
+         String e = doctorpassword.getText().toString();
 
 
 
-        if(a.isEmpty() || b.isEmpty() || c.isEmpty()||d.isEmpty() )
+        if(a.isEmpty() || b.isEmpty() || c.isEmpty()
+                || d.isEmpty() || e.isEmpty())
+              //  doctorpassword.getText() != doctorconfirmpswrd.getText() )
         {
-            TextView t = findViewById(R.id.enterdetailsTV);
-                    t.setText("enter the details");
+            //Intent intent = new Intent(this,DoctorSignupActivity.class);
+            //startActivityForResult(intent,doctorSignup);
+
+           TextView t = findViewById(R.id.enterdetailsTV);
+           t.setText("enter correct details");
+
+
         }
         else
         {
             Intent intent = new Intent(this,MainActivity.class);
             startActivityForResult(intent,Signup);
+            Toast.makeText(getApplicationContext(),
+                    "Please login again", Toast.LENGTH_SHORT).show();
 
         }
 
