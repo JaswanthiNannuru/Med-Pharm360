@@ -41,8 +41,7 @@ public class DoctorSignupActivity extends SelectionActivity {
 
 
 
-        if(a.isEmpty() || b.isEmpty() || c.isEmpty()
-                || d.isEmpty() || e.isEmpty())
+        if(a.isEmpty() || b.isEmpty() || c.isEmpty() || d.isEmpty() || e.isEmpty())
               //  doctorpassword.getText() != doctorconfirmpswrd.getText() )
         {
             //Intent intent = new Intent(this,DoctorSignupActivity.class);
