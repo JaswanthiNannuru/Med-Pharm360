@@ -67,8 +67,23 @@ public class MainActivity extends AppCompatActivity {
 
     }
     public void patientLogin(View v){
-        Intent intent = new Intent(this,PatientHomeActivity.class);
-        startActivityForResult(intent,PatientLogin);
+        EditText j = findViewById(R.id.usernameET);
+        String a = j.getText().toString();
+
+        EditText w = findViewById(R.id.passwordET);
+        String b = w.getText().toString();
+
+        if(a.isEmpty() || b.isEmpty() )
+        {
+            TextView t = findViewById(R.id.EnterdetailsET3);
+            t.setText("enter the details");
+        }
+        else{
+            Intent intent = new Intent(this,PatientHomeActivity.class);
+            startActivityForResult(intent,PatientLogin);
+        }
+       // Intent intent = new Intent(this,PatientHomeActivity.class);
+        //startActivityForResult(intent,PatientLogin);
 
         EditText username = (EditText)findViewById(R.id.usernameET);
         EditText password = (EditText)findViewById(R.id.passwordET);
