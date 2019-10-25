@@ -7,25 +7,11 @@
 
 
     <Button
-        android:id="@+id/doctor1BTN"
-        android:layout_width="100dp"
-        android:layout_height="80dp"
-        android:onClick="doctor1Click"
-        android:text="Doctor1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.311"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.024"
-        tools:ignore="OnClick" />
-
-    <Button
         android:id="@+id/doctor2BTN"
         android:layout_width="100dp"
         android:layout_height="80dp"
-        android:onClick="doctor2Click"
-        android:text="Doctor2"
+        android:onClick="doctor2"
+        android:text="alex"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.311"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -38,8 +24,8 @@
         android:id="@+id/doctor3BTN"
         android:layout_width="100dp"
         android:layout_height="80dp"
-        android:onClick="doctor3Click"
-        android:text="Doctor3"
+        android:onClick="doctor3"
+        android:text="lydia"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.311"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -114,6 +100,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.374" />
+
+    <Button
+        android:id="@+id/doctor1BTN"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:onClick="doctor1"
+        android:text="William"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.311"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.024" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

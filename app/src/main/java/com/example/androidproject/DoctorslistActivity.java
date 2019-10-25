@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import java.security.PublicKey;
+
 public class DoctorslistActivity extends AppointmentActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,31 +20,12 @@ public class DoctorslistActivity extends AppointmentActivity{
     public static final int back9 = 0;
 
 
-    public void doctor1Click(View v){
-        TextView t = findViewById(R.id.DoctorinfoTV);
-        t.setText("willam , Dermitologist");
-
-
-    }
-    public void doctor2Click(View v){
-        TextView t = findViewById(R.id.DoctorinfoTV);
-        t.setText("Dheeraj , Cardiologist");
-
-
-    }
-
-    public void doctor3Click(View v){
-        TextView t = findViewById(R.id.DoctorinfoTV);
-        t.setText("Maria , Oncologist");
-
-
-
-
-    }
 
     public void proceed1(View v){
         Intent intent = new Intent(this, AppointmentActivity.class);
         startActivityForResult(intent,doctor1);
+
+
 
 
     }
@@ -59,9 +42,29 @@ public class DoctorslistActivity extends AppointmentActivity{
 
 
 
+
     public void back9Click(View v) {
         Intent intent = new Intent(this, PatientHomeActivity.class);
         startActivityForResult(intent,back9);
     }
 
+    public void doctor1(View v)
+    {
+        TextView t = findViewById(R.id.DoctorinfoTV);
+        t.setText("Dermatologist");
+
+    }
+
+    public void doctor2(View v)
+    {
+        TextView t = findViewById(R.id.DoctorinfoTV);
+        t.setText("oncologist");
+
+    }
+    public void doctor3(View v)
+    {
+        TextView t = findViewById(R.id.DoctorinfoTV);
+        t.setText("cardialogist");
+
+    }
 }
