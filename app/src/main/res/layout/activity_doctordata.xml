@@ -85,7 +85,7 @@
         android:id="@+id/back5BTN"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="go back"
+        android:text="go back"
         android:onClick="back5Click"
         android:backgroundTint="#3949AB"
         android:textColor="#FAFAFC"
