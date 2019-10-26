@@ -2,17 +2,19 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#3B03A9F4">
 
     <TextView
         android:id="@+id/patient2reportTV"
         android:layout_width="match_parent"
         android:layout_height="500dp"
         android:hint="patient2 data"
-        android:textSize="24sp"
         android:text="-Name: Maria \n-Age: 30 \n-BloodGroup:O+
         \n-Problem: Coronary Artery Disease \n-Appointment Date:09/22/2019
         \n-Medication Suggested: Coronary stent, Coronary Angio Plasty"
+        android:textColor="#181717"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0"
         app:layout_constraintLeft_toLeftOf="parent"

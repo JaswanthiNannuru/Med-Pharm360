@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#3B03A9F4"
     tools:context=".MainActivity">
 
     <EditText
@@ -135,7 +136,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.754" />
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
