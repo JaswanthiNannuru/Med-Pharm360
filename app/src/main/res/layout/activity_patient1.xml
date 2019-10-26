@@ -2,15 +2,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#3B03A9F4">
 
     <TextView
         android:id="@+id/patient1reportTV"
         android:layout_width="match_parent"
         android:layout_height="500dp"
-        android:textSize="24sp"
         android:text="-Name: Lekha \n-Age: 23 \n-BloodGroup:B+ \n-Problem: Acne
         \n-Appointment Date:10/25/2019 \n-Medication Suggested: Aleovera Gell"
+        android:textColor="#030303"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -24,18 +26,14 @@
         android:layout_height="wrap_content"
         android:onClick="patient1backClick"
         android:text="go back"
+        android:backgroundTint="#3949AB"
+        android:textColor="#FAFAFC"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.95"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.976" />
-
-
-
-
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

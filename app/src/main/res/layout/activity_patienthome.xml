@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="#3B03A9F4">
 
 
     <Button
@@ -12,6 +12,8 @@
         android:layout_height="80dp"
         android:onClick="doctorlistClick"
         android:text="Doctors"
+        android:backgroundTint="#3949AB"
+        android:textColor="#FAFAFC"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -27,6 +29,8 @@
         android:layout_height="80dp"
         android:onClick="healthhistoryClick"
         android:text="HealthHistory"
+        android:backgroundTint="#3949AB"
+        android:textColor="#FAFAFC"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -35,12 +39,15 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.172"
         tools:ignore="OnClick" />
+
     <Button
         android:id="@+id/back8BTN"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="go back"
+        android:text="go back"
         android:onClick="back8Click"
+        android:backgroundTint="#3949AB"
+        android:textColor="#FAFAFC"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.99"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -50,5 +57,4 @@
         tools:ignore="OnClick" />
 
 
-
-</androidx.constraintlayout.widget.ConstraintLayout >
+</androidx.constraintlayout.widget.ConstraintLayout>

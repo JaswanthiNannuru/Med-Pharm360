@@ -3,15 +3,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    >
+    android:background="#3B03A9F4">
 
 
     <Button
         android:id="@+id/back12BTN"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="go back"
+        android:text="go back"
         android:onClick="back12Click"
+        android:backgroundTint="#3949AB"
+        android:textColor="#FAFAFC"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.95"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -33,4 +35,4 @@
         app:layout_constraintVertical_bias="0.0" />
 
 
-</androidx.constraintlayout.widget.ConstraintLayout >
+</androidx.constraintlayout.widget.ConstraintLayout>

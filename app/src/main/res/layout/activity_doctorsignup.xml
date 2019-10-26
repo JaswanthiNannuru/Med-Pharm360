@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="#3B03A9F4">
 
     <EditText
         android:id="@+id/doctornameET"
@@ -103,6 +103,8 @@
         android:layout_marginLeft="100dp"
         android:onClick="doctorSignup"
         android:text="sign up"
+        android:backgroundTint="#3949AB"
+        android:textColor="#FAFAFC"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.315"
@@ -115,8 +117,10 @@
         android:id="@+id/back2BTN"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="go back"
+        android:text="go back"
         android:onClick="back2Click"
+        android:backgroundTint="#3949AB"
+        android:textColor="#FAFAFC"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.99"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -135,7 +139,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.754" />
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
