@@ -15,6 +15,6 @@
 - Patients can select the doctors and book the appointments at doctors.
 - Patients also can view their helath history record.
 ### FLOW CHART
-![flowchart](flowchart.png)
+![flowchart1](flowchart1.png)
 ### CONCLUSION
 This App helps doctors and Patients in either way. Doctors use this Application to look at the Patients Previous History and Patients use this Application to book the appointment at doctor and also can view their Health Record.
