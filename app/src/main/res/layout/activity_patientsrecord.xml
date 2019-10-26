@@ -12,6 +12,8 @@
         android:layout_height="wrap_content"
         android:hint="go back"
         android:onClick="back12Click"
+        android:backgroundTint="#3949AB"
+        android:textColor="#FAFAFC"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.95"
         app:layout_constraintLeft_toLeftOf="parent"
