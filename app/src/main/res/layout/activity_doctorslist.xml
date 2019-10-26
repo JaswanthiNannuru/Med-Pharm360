@@ -6,6 +6,21 @@
     android:background="#3B03A9F4"
     tools:context=".DoctorslistActivity">
 
+    <Button
+        android:id="@+id/doctor1BTN"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:onClick="doctor1"
+        android:text="William"
+        android:backgroundTint="#C0CA33"
+        android:textColor="#FAFAFC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.311"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.024" />
+
 
     <Button
         android:id="@+id/doctor2BTN"
@@ -13,6 +28,8 @@
         android:layout_height="80dp"
         android:onClick="doctor2"
         android:text="alex"
+        android:backgroundTint="#C0CA33"
+        android:textColor="#FAFAFC"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.311"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -27,6 +44,8 @@
         android:layout_height="80dp"
         android:onClick="doctor3"
         android:text="lydia"
+        android:backgroundTint="#C0CA33"
+        android:textColor="#FAFAFC"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.311"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -69,6 +88,8 @@
         android:layout_height="wrap_content"
         android:onClick="proceed1"
         android:text="Proceed"
+        android:backgroundTint="#3949AB"
+        android:textColor="#FAFAFC"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.823"
@@ -82,6 +103,8 @@
         android:layout_height="wrap_content"
         android:onClick="proceed2"
         android:text="Proceed"
+        android:backgroundTint="#3949AB"
+        android:textColor="#FAFAFC"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.823"
@@ -95,6 +118,8 @@
         android:layout_height="wrap_content"
         android:onClick="proceed3"
         android:text="Proceed"
+        android:backgroundTint="#3949AB"
+        android:textColor="#FAFAFC"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.823"
@@ -102,18 +127,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.374" />
 
-    <Button
-        android:id="@+id/doctor1BTN"
-        android:layout_width="100dp"
-        android:layout_height="80dp"
-        android:onClick="doctor1"
-        android:text="William"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.311"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.024" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
