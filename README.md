@@ -1,5 +1,10 @@
 # MEDPHARM360
 ## MOBILE COMPUTING - EARLY MORNING - TEAM 06
+### TEAM MEMBERS
+- JASWANTHI NANNURU
+- SANJANA BASWAPURAM
+- HARSHAVARDHAN REDDY BOLLAM
+- VAMSHIKRISHNA REDDY YEDALLA
 ### ABSTRACT
   MEDPHARM360 is the Android Application used by Doctors and Patients, where they can book the appointments and look the previous Health History and Patients can also view their HealthRecord.
 ### GOALS OF THE APP
