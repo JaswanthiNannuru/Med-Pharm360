@@ -18,12 +18,12 @@
 ![FLOWCHART](FLOWCHART.png)
 ### ACCESSING CREDENTIALS
 ##### DOCTOR LOGIN
-- __username__: doctor1, __password__: doctor1
-- __username__: doctor2, __password__: doctor2
-- __username__: doctor3, __password__: doctor3
+- __username__: sanjana, __password__: sanjana
+- __username__: harsha, __password__: bollam
+- __username__: jash, __password__: nannuru
 ##### PATIENT LOGIN
-- __username__: patient1, __password__: patient1
-- __username__: patient2, __password__: patient2
-- __username__: patient3, __password__: patient3
+- __username__: lekha, __password__: doshi
+- __username__: supriya, __password__: peddi
+- __username__: charan, __password__: reddy
 ### CONCLUSION
 This App helps doctors and Patients in either way. Doctors use this Application to look at the Patients Previous History and Patients use this Application to book the appointment at doctor and also can view their Health Record.
