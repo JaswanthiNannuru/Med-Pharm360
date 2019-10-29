@@ -62,12 +62,12 @@ public class MainActivity extends AppCompatActivity {
             if (username.getText() == null || password.getText() == null) {
                 // Credentials not entered
                 Toast.makeText(getApplicationContext(),
-                        "Enter your Credentials", Toast.LENGTH_SHORT).show();
+                        "Enter your Credentials", Toast.LENGTH_LONG).show();
                 //Intent intent1 = new Intent(this,MainActivity.class);
                 // startActivityForResult(intent1,DoctorLogin);
             } else {
                 //incorrect password
-                Toast.makeText(getApplicationContext(), "Wrong Credentials", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Wrong Credentials", Toast.LENGTH_LONG).show();
                 // Intent intent1 = new Intent(this,MainActivity.class);
                 // startActivityForResult(intent1,DoctorLogin);
             }
