@@ -50,9 +50,9 @@ public class MainActivity extends AppCompatActivity {
         EditText username = (EditText) findViewById(R.id.usernameET);
         EditText password = (EditText) findViewById(R.id.passwordET);
 
-        if (username.getText().toString().equals("doctor1") && password.getText().toString().equals("doctor1")||
-                username.getText().toString().equals("doctor2") && password.getText().toString().equals("doctor2")||
-                username.getText().toString().equals("doctor3") && password.getText().toString().equals("doctor3")) {
+        if (username.getText().toString().equals("sanjana") && password.getText().toString().equals("sanjana")||
+                username.getText().toString().equals("harsha") && password.getText().toString().equals("bollam")||
+                username.getText().toString().equals("jashu") && password.getText().toString().equals("nannuru")) {
             //correct password
             Toast.makeText(getApplicationContext(),
                     "Redirecting...", Toast.LENGTH_SHORT).show();
@@ -99,9 +99,9 @@ public class MainActivity extends AppCompatActivity {
         EditText username = (EditText)findViewById(R.id.usernameET);
         EditText password = (EditText)findViewById(R.id.passwordET);
 
-        if(username.getText().toString().equals("patient1") && password.getText().toString().equals("patient1")||
-                username.getText().toString().equals("patient2") && password.getText().toString().equals("patient2")||
-                username.getText().toString().equals("patient3") && password.getText().toString().equals("patient3"))
+        if(username.getText().toString().equals("lekha") && password.getText().toString().equals("doshi")||
+                username.getText().toString().equals("supriya") && password.getText().toString().equals("peddi")||
+                username.getText().toString().equals("charan") && password.getText().toString().equals("reddy"))
         {
             //correct password
             Toast.makeText(getApplicationContext(),
