@@ -16,5 +16,14 @@
 - Patients also can view their helath history record.
 ### FLOW CHART
 ![FLOWCHART](FLOWCHART.png)
+### ACCESSING CREDENTIALS
+##### DOCTOR LOGIN
+- __username__: doctor1, __password__: doctor1
+- __username__: doctor2, __password__: doctor2
+- __username__: doctor3, __password__: doctor3
+##### PATIENT LOGIN
+- __username__: patient1, __password__: patient1
+- __username__: patient2, __password__: patient2
+- __username__: patient3, __password__: patient3
 ### CONCLUSION
 This App helps doctors and Patients in either way. Doctors use this Application to look at the Patients Previous History and Patients use this Application to book the appointment at doctor and also can view their Health Record.
