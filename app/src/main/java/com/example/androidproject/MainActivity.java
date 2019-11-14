@@ -9,6 +9,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -20,6 +22,8 @@ public class MainActivity extends AppCompatActivity {
     public static final int PatientLogin =  0;
 
     public static final int Signup = 0;
+
+    FirebaseAuth mFirebaseAuth;
 
 
 
@@ -50,6 +54,10 @@ public class MainActivity extends AppCompatActivity {
         EditText username = (EditText) findViewById(R.id.usernameET);
         EditText password = (EditText) findViewById(R.id.passwordET);
 
+        mFirebaseAuth = FirebaseAuth.getInstance();
+
+
+/*
         if (username.getText().toString().equals("sanjana") && password.getText().toString().equals("sanjana")||
                 username.getText().toString().equals("harsha") && password.getText().toString().equals("bollam")||
                 username.getText().toString().equals("jash") && password.getText().toString().equals("nannuru")) {
@@ -72,8 +80,10 @@ public class MainActivity extends AppCompatActivity {
                 // startActivityForResult(intent1,DoctorLogin);
             }
         }
-    }
 
+
+ */
+    }
     public void patientLogin(View v){
 /*
 
@@ -99,6 +109,7 @@ public class MainActivity extends AppCompatActivity {
         EditText username = (EditText)findViewById(R.id.usernameET);
         EditText password = (EditText)findViewById(R.id.passwordET);
 
+        /*
         if(username.getText().toString().equals("lekha") && password.getText().toString().equals("doshi")||
                 username.getText().toString().equals("supriya") && password.getText().toString().equals("peddi")||
                 username.getText().toString().equals("charan") && password.getText().toString().equals("reddy"))
@@ -123,6 +134,8 @@ public class MainActivity extends AppCompatActivity {
               //  startActivityForResult(intent,PatientLogin);
             }
         }
+
+         */
     }
     public void signupClick(View v){
         Intent intent = new Intent(this,SelectionActivity.class);

@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">MEDPHARM360</string>
+
+    <string name="back4app_server_url">https://parseapi.back4app.com/</string>
+
+    <!-- Change the following strings as required -->
+    <string name="back4app_app_id">6BESRIXh37rQXA8iFQN1TiRi6P5EJDznxfqg8MEm</string>
+    <string name="back4app_client_key">SRyhhfXoqiaxT6uc5KK69w2vq9LF5EGv4TbIhNBR</string>
+
 </resources>

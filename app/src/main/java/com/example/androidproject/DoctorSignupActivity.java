@@ -7,7 +7,13 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class DoctorSignupActivity extends SelectionActivity {
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.google.firebase.auth.FirebaseAuth;
+
+public class DoctorSignupActivity extends AppCompatActivity{
+
+    FirebaseAuth firebaseAuth;
 
 
         @Override
@@ -55,7 +61,7 @@ public class DoctorSignupActivity extends SelectionActivity {
         else
         {
             Intent intent = new Intent(this,MainActivity.class);
-            startActivityForResult(intent,Signup);
+            startActivityForResult(intent,doctorSignup);
             Toast.makeText(getApplicationContext(),
                     "Please login again", Toast.LENGTH_SHORT).show();
 
