@@ -1,6 +1,6 @@
 {
   "project_info": {
-    "project_number": "188982177627",
+    "project_number": "92478489508",
     "firebase_url": "https://android-de137.firebaseio.com",
     "project_id": "android-de137",
     "storage_bucket": "android-de137.appspot.com"
@@ -8,35 +8,27 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:188982177627:android:7d3bd4068a3e2fc30db47e",
+        "mobilesdk_app_id": "1:92478489508:android:2baaeba6f1388d032ef731",
         "android_client_info": {
           "package_name": "com.example.androidproject"
         }
       },
       "oauth_client": [
         {
-          "client_id": "188982177627-f30eo9la39tcu31mg4hkrov003a4klme.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.example.androidproject",
-            "certificate_hash": "f64e084101e3cf591869136cc71cfeded79a0d83"
-          }
-        },
-        {
-          "client_id": "188982177627-prmjvmfrro63h8ap5irqgmvp9opiskfv.apps.googleusercontent.com",
+          "client_id": "92478489508-kvskjlhelo6sdb5hg4nv7c7vhsvt93tv.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDTmKR3nHScPmhuwWIm7v2JU1tepT66mhI"
+          "current_key": "AIzaSyCwDUiOqRqjm6my8WAmdIuaRXawNd0pnEo"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "188982177627-prmjvmfrro63h8ap5irqgmvp9opiskfv.apps.googleusercontent.com",
+              "client_id": "92478489508-kvskjlhelo6sdb5hg4nv7c7vhsvt93tv.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
