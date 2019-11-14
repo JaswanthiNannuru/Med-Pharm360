@@ -1,6 +1,10 @@
 package com.example.androidproject;
 
+import android.app.Activity;
 import android.app.Application;
+
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.parse.Parse;
 import com.parse.ParseInstallation;
 

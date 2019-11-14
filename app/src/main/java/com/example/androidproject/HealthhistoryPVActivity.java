@@ -4,7 +4,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class HealthhistoryPVActivity extends MainActivity {
+import androidx.appcompat.app.AppCompatActivity;
+
+public class HealthhistoryPVActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

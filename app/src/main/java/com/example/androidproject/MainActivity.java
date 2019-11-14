@@ -9,7 +9,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.google.firebase.auth.FirebaseAuth;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -22,10 +22,6 @@ public class MainActivity extends AppCompatActivity {
     public static final int PatientLogin =  0;
 
     public static final int Signup = 0;
-
-    FirebaseAuth mFirebaseAuth;
-
-
 
     public void doctorLogin(View v) {
         /*
@@ -53,8 +49,6 @@ public class MainActivity extends AppCompatActivity {
   */
         EditText username = (EditText) findViewById(R.id.usernameET);
         EditText password = (EditText) findViewById(R.id.passwordET);
-
-        mFirebaseAuth = FirebaseAuth.getInstance();
 
 
 /*

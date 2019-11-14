@@ -1,12 +1,13 @@
 package com.example.androidproject;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class DoctorHomeActivity extends DoctordataActivity {
+public class DoctorHomeActivity extends AppCompatActivity {
 
 
     @Override
