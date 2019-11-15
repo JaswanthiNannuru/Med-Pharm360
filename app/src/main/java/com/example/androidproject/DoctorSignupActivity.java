@@ -33,7 +33,7 @@ public class DoctorSignupActivity extends AppCompatActivity {
    /* public void setContentView(int activity_doctorsignup) {
     }*/
 
-   
+
     final Button back_button = findViewById(R.id.back2BTN);
         back_button.setOnClickListener(new View.OnClickListener()
     {
