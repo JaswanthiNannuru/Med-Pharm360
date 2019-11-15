@@ -28,41 +28,36 @@ public class DoctorSignupActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_doctorsignup);
-    }
 
-   /* public void setContentView(int activity_doctorsignup) {
-    }*/
-
-   
-    final Button back_button = findViewById(R.id.back2BTN);
-        back_button.setOnClickListener(new View.OnClickListener()
-    {
-        @Override
-        public void onClick (View v){
-        final ProgressDialog dlg = new ProgressDialog(DoctorSignupActivity.this);
-        dlg.setTitle("Please, wait a moment.");
-        dlg.setMessage("Returning to the login section...");
-        dlg.show();
-        Intent intent = new Intent(DoctorSignupActivity.this, MainActivity.class);
-        dlg.dismiss();
-        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(intent);
-    }
-
-    });
+        final EditText doctorusername = (EditText) findViewById(R.id.doctornameET);
+        final EditText departmentname = (EditText) findViewById(R.id.departmentET);
+        final EditText doctormailid = (EditText) findViewById(R.id.doctormailidET);
+        final EditText doctorphno = (EditText) findViewById(R.id.doctorphnoET);
+        final EditText doctorpassword = (EditText) findViewById(R.id.doctorpasswordET);
+        final EditText doctorconformpassword = (EditText) findViewById(R.id.doctorconformpasswordET);
+        Button doctorsignupbutton = findViewById(R.id.doctorsignupBTN);
 
 
-    EditText doctorusername = (EditText) findViewById(R.id.doctornameET);
-    EditText departmentname = (EditText) findViewById(R.id.departmentET);
-    EditText doctormailid = (EditText) findViewById(R.id.doctormailidET);
-    EditText doctorphno = (EditText) findViewById(R.id.doctorphnoET);
-    EditText doctorpassword = (EditText) findViewById(R.id.doctorpasswordET);
-    EditText doctorconformpassword = (EditText) findViewById(R.id.doctorconformpasswordET);
+        Button backButton = findViewById(R.id.back2BTN);
 
-        final Button doctorsignupbutton = findViewById(R.id.doctorsignupBTN);
-        doctorsignupbutton.setOnClickListener(new View.OnClickListener()
 
-    {
+        backButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                final ProgressDialog dlg = new ProgressDialog(DoctorSignupActivity.this);
+                dlg.setTitle("Please, wait a moment.");
+                dlg.setMessage("Returning to the login section...");
+                dlg.show();
+                Intent intent = new Intent(DoctorSignupActivity.this, MainActivity.class);
+                dlg.dismiss();
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+                startActivity(intent);
+            }
+        });
+
+
+
+    doctorsignupbutton.setOnClickListener(new View.OnClickListener() {
 
         @Override
         public void onClick (View v){
