@@ -38,10 +38,10 @@ public class DoctorSignupActivity extends AppCompatActivity {
         Button doctorsignupbutton = findViewById(R.id.doctorsignupBTN);
 
 
-        Button backButton = findViewById(R.id.back2BTN);
+        Button backButton2 = findViewById(R.id.back2BTN);
 
 
-        backButton.setOnClickListener(new View.OnClickListener() {
+        backButton2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 final ProgressDialog dlg = new ProgressDialog(DoctorSignupActivity.this);

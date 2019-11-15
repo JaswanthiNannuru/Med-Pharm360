@@ -34,10 +34,10 @@ public class PatientSignupActivity extends AppCompatActivity {
         Button patientsignupbutton = findViewById(R.id.patientsignupBTN);
 
 
-        Button backButton = findViewById(R.id.back2BTN);
+        Button backButton3 = findViewById(R.id.back3BTN);
 
 
-        backButton.setOnClickListener(new View.OnClickListener() {
+        backButton3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 final ProgressDialog dlg = new ProgressDialog(PatientSignupActivity.this);
@@ -66,14 +66,14 @@ public class PatientSignupActivity extends AppCompatActivity {
                 }
                 if (isEmpty(patientmailid)) {
                     if (validationError) {
-                        validationErrorMessage.append("doctor mailid");
+                        validationErrorMessage.append("patient mailid");
                     }
                     validationError = true;
                     validationErrorMessage.append(" ");
                 }
                 if (isEmpty(patientphno)) {
                     if (validationError) {
-                        validationErrorMessage.append("doctor phonenumber");
+                        validationErrorMessage.append("patient phonenumber");
                     }
                     validationError = true;
                     validationErrorMessage.append(" ");
