@@ -322,7 +322,7 @@ public class MainActivity extends AppCompatActivity {
 
 
                         //edit the last main activity it had been logout activity
-                        Intent intent = new Intent(MainActivity.this, LogoutActivity.class);
+                        Intent intent = new Intent(MainActivity.this, MainActivity.class);
                         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                         startActivity(intent);
                     }
