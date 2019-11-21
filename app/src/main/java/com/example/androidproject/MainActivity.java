@@ -138,6 +138,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
     private boolean isEmpty(EditText text) {
         if (text.getText().toString().trim().length() > 0) {
             return false;
@@ -274,7 +275,6 @@ public class MainActivity extends AppCompatActivity {
         progressDialog.dismiss();*/
 
 
-
         ParseUser.logInInBackground(username.getText().toString(), password.getText().toString(), new LogInCallback() {
             @Override
             public void done(ParseUser parseUser, ParseException e) {
@@ -322,7 +322,7 @@ public class MainActivity extends AppCompatActivity {
         ok.show();
     }*/
 
-        public void signupClick(View v) {
+    public void signupClick(View v) {
         final Button signup_button = findViewById(R.id.signupBTN);
         signup_button.setOnClickListener(new View.OnClickListener() {
             @Override
