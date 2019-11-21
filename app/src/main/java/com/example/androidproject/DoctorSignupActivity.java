@@ -133,7 +133,7 @@ public class DoctorSignupActivity extends AppCompatActivity {
                     public void done(ParseException e) {
                         if (e == null) {
                             dlg.dismiss();
-                            alertDisplayer("Sucessful Login", "Welcome " + doctorusername.getText().toString() + "!");
+                            alertDisplayer("Sucessful Signup!", "Please Login " + doctorusername.getText().toString() + "!");
 
                         } else {
                             dlg.dismiss();

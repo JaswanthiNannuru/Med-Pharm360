@@ -121,7 +121,7 @@ public class PatientSignupActivity extends AppCompatActivity {
                     public void done(ParseException e) {
                         if (e == null) {
                             dlg.dismiss();
-                            alertDisplayer("Sucessful Login", "Welcome " + patientusername.getText().toString() + "!");
+                            alertDisplayer("Sucessful Signup!", "Please Login " + patientusername.getText().toString() + "!");
 
                         } else {
                             dlg.dismiss();
