@@ -148,10 +148,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
          */
-
-
-
-
         final Button login_button = findViewById(R.id.doctorloginBTN);
         login_button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -189,7 +185,8 @@ public class MainActivity extends AppCompatActivity {
                     public void done(ParseUser parseUser, ParseException e) {
                         if (parseUser != null) {
                             dlg.dismiss();
-                            alertDisplayer("Sucessful Login","Welcome back " + username.getText().toString() + "!");
+                            //alertDisplayer("Sucessful Login","Welcome back " + username.getText().toString() + "!");
+                            alertDisplayer("gvfutfgvjgvjv");
 
                         } else {
                             dlg.dismiss();
@@ -220,7 +217,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    private void alertDisplayer(String title,String message){
+    public void alertDisplayer(String title,String message){
         AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this)
                 .setTitle(title)
                 .setMessage(message)
@@ -311,7 +308,7 @@ public class MainActivity extends AppCompatActivity {
 
  */
 
-    private void alertDisplayer(String title,String message){
+    public void alertDisplayer(String title,String message){
         AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this)
                 .setTitle(title)
                 .setMessage(message)
@@ -322,7 +319,7 @@ public class MainActivity extends AppCompatActivity {
 
 
                         //edit the last main activity it had been logout activity
-                        Intent intent = new Intent(MainActivity.this, LogoutActivity.class);
+                        Intent intent = new Intent(MainActivity.this,MainActivity.class);
                         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                         startActivity(intent);
                     }
