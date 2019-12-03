@@ -5,129 +5,119 @@
     android:layout_height="match_parent"
     android:background="#3B03A9F4">
 
-    <Button
-        android:id="@+id/doctor1BTN"
-        android:layout_width="100dp"
-        android:layout_height="80dp"
-        android:backgroundTint="#3F51B5"
-        android:onClick="doctor1"
-        android:text="William"
-        android:textColor="#FAFAFC"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.311"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.024" />
-
-
-    <Button
-        android:id="@+id/doctor2BTN"
-        android:layout_width="100dp"
-        android:layout_height="80dp"
-        android:backgroundTint="#3F51B5"
-        android:onClick="doctor2"
-        android:text="alex"
-        android:textColor="#FAFAFC"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.311"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.199"
-        tools:ignore="OnClick" />
-
-    <Button
-        android:id="@+id/doctor3BTN"
-        android:layout_width="100dp"
-        android:layout_height="80dp"
-        android:backgroundTint="#3F51B5"
-        android:onClick="doctor3"
-        android:text="lydia"
-        android:textColor="#FAFAFC"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.311"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.373"
-        tools:ignore="OnClick" />
 
     <Button
         android:id="@+id/back9BTN"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="go back"
-        android:onClick="back9Click"
         android:backgroundTint="#3949AB"
+        android:onClick="back9Click"
+        android:text="go back"
         android:textColor="#FAFAFC"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.99"
+        app:layout_constraintHorizontal_bias="0.981"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.99"
+        app:layout_constraintVertical_bias="0.938"
         tools:ignore="OnClick" />
-
-    <TextView
-        android:id="@+id/DoctorinfoTV"
-        android:layout_width="200dp"
-        android:layout_height="100dp"
-        android:text="Displays Doctor info"
-        android:textColor="#0F0101"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.668" />
 
     <Button
         android:id="@+id/Proceed1BTN"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="proceed1"
-        android:text="Proceed"
+        android:layout_height="45dp"
         android:backgroundTint="#3949AB"
+        android:onClick="proceed1"
+        android:text="Book"
         android:textColor="#FAFAFC"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.823"
+        app:layout_constraintHorizontal_bias="0.95"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.046" />
+        app:layout_constraintVertical_bias="0.193" />
 
     <Button
         android:id="@+id/Proceed2BTN"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="proceed2"
-        android:text="Proceed"
+        android:layout_height="45dp"
         android:backgroundTint="#3949AB"
+        android:onClick="proceed2"
+        android:text="Book"
         android:textColor="#FAFAFC"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.823"
+        app:layout_constraintHorizontal_bias="0.95"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.19" />
+        app:layout_constraintVertical_bias="0.339" />
 
     <Button
         android:id="@+id/Proceed3BTN"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="proceed3"
-        android:text="Proceed"
+        android:layout_height="45dp"
         android:backgroundTint="#3949AB"
+        android:onClick="proceed3"
+        android:text="Book"
         android:textColor="#FAFAFC"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.823"
+        app:layout_constraintHorizontal_bias="0.95"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.374" />
+        app:layout_constraintVertical_bias="0.479" />
 
+    <TextView
+        android:id="@+id/doctor1tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name: William Roy \n Department: Dermatology \n Ph no: 3456789012 \n Email: williamroy@gmail.com"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.185" />
+
+    <TextView
+        android:id="@+id/doctorstv"
+        android:layout_width="400dp"
+        android:layout_height="30dp"
+        android:text="List Of Doctors"
+        android:textAlignment="center"
+        android:textColor="#131212"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <TextView
+        android:id="@+id/doctor2tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name: John Texon \n Department: Gynecology \n Ph no: 1234567890 \n Email: johntexon@gmail.com"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.326" />
+
+    <TextView
+        android:id="@+id/doctor3tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name: Paul Wixtom \n Department: Oncology \n Ph no: 2345678901 \n Email: paulwixtom@gmail.com"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.474" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

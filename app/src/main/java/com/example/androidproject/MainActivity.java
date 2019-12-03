@@ -125,7 +125,9 @@ public class MainActivity extends AppCompatActivity {
             public void done(ParseUser parseUser, ParseException e) {
                 if (parseUser != null) {
                     dlg.dismiss();
-                    alertDisplayer("Sucessful Login", "Welcome back " + parseUser.getUsername() + "!");
+                    //alertDisplayer("Sucessful Login", "Welcome back " + parseUser.getUsername() + "!");
+                    Toast.makeText(MainActivity.this, "Welcome Back", Toast.LENGTH_LONG).show();
+
                     Intent intent = new Intent(MainActivity.this, DoctorHomeActivity.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                     startActivity(intent);
@@ -280,7 +282,8 @@ public class MainActivity extends AppCompatActivity {
             public void done(ParseUser parseUser, ParseException e) {
                 if (parseUser != null) {
                     dlg.dismiss();
-                    alertDisplayer("Sucessful Login", "Welcome back " + parseUser.getUsername() + "!");
+                   // alertDisplayer("Sucessful Login", "Welcome back " + parseUser.getUsername() + "!");
+                    Toast.makeText(MainActivity.this, "Welcome Back", Toast.LENGTH_LONG).show();
 
                     Intent intent = new Intent(MainActivity.this, PatientHomeActivity.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);

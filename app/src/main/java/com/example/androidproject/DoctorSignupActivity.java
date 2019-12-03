@@ -35,6 +35,7 @@ public class DoctorSignupActivity extends AppCompatActivity {
         final EditText doctorphno = (EditText) findViewById(R.id.doctorphnoET);
         final EditText doctorpassword = (EditText) findViewById(R.id.doctorpasswordET);
         final EditText doctorconformpassword = (EditText) findViewById(R.id.doctorconformpasswordET);
+
         Button doctorsignupbutton = findViewById(R.id.doctorsignupBTN);
 
 

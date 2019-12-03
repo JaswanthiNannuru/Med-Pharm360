@@ -44,23 +44,5 @@ public class DoctorslistActivity extends AppCompatActivity {
         startActivityForResult(intent,back9);
     }
 
-    public void doctor1(View v)
-    {
-        TextView t = findViewById(R.id.DoctorinfoTV);
-        t.setText("Dermatologist");
 
-    }
-
-    public void doctor2(View v)
-    {
-        TextView t = findViewById(R.id.DoctorinfoTV);
-        t.setText("oncologist");
-
-    }
-    public void doctor3(View v)
-    {
-        TextView t = findViewById(R.id.DoctorinfoTV);
-        t.setText("cardiologist");
-
-    }
 }

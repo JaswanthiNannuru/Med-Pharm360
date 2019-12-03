@@ -10,7 +10,7 @@ public class HealthhistoryDVActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_healthhistory);
+        setContentView(R.layout.activity_healthhistorydv);
     }
     public static final int records = 0;
     public static final int back11 = 0;
