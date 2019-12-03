@@ -23,8 +23,6 @@
         <activity android:name=".DoctorHomeActivity"> </activity>
         <activity android:name=".DoctordataActivity"> </activity>
         <activity android:name=".HistoryloginActivity"> </activity>
-        <activity android:name=".HealthhistoryDVActivity"> </activity>
-        <activity android:name=".HealthhistoryPVActivity"> </activity>
         <activity android:name=".DoctorslistActivity"> </activity>
         <activity android:name=".AppointmentActivity"> </activity>
         <activity android:name=".PatientsrecordActivity"> </activity>
