@@ -58,8 +58,5 @@ public class PatientsrecordActivity extends AppCompatActivity {
                         "\n"+
                         "Mediacation: " + et5.getText().toString() +
                         "\n");
-
-
-
     }
 }
