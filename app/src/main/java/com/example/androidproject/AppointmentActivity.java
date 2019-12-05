@@ -36,15 +36,14 @@ public class AppointmentActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_appointment);
 
-        checked = findViewById(R.id.checkbox1);
-        CheckBox c2 = findViewById(R.id.checkbox2);
-        CheckBox c3 = findViewById(R.id.checkbox3);
-        CheckBox c4 = findViewById(R.id.checkbox4);
+      //  checked = findViewById(R.id.checkbox1);
+
+
         TextView tv = findViewById(R.id.doctordataTV);
 
         SharedPreferences preferences = getApplicationContext().getSharedPreferences("checkbox", 0);
 
-        final SharedPreferences.Editor editor = preferences.edit();
+       /* final SharedPreferences.Editor editor = preferences.edit();
 
         checked.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -53,28 +52,47 @@ public class AppointmentActivity extends AppCompatActivity {
                 editor.putBoolean("checkbox", value);
                 editor.commit();
 
-                Toast.makeText(AppointmentActivity.this, "Done", Toast.LENGTH_LONG).show();
+               // Toast.makeText(AppointmentActivity.this, "Done", Toast.LENGTH_LONG).show();
 
 
             }
 
         });
+    }*/
     }
-
     public void conform1Click(View v) {
 
-        SharedPreferences preferences = getPreferences(Context.MODE_PRIVATE);
-        SharedPreferences.Editor editor = preferences.edit();
-        preferences.getBoolean("checkbox",value);
-        TextView tv = findViewById(R.id.appConformTV);
-        Integer rand = ThreadLocalRandom.current().nextInt(100000, 10000000);
-        tv.setText("Your Confirmation Number:  "+ "CN"+rand.toString() );
-        boolean c1 = checked.isChecked();
-        editor.putBoolean("checkbox", value);
-        editor.commit();
-        Toast.makeText(AppointmentActivity.this, "confirmed", Toast.LENGTH_LONG).show();
-        editor.commit();
+        CheckBox c1 = findViewById(R.id.checkbox1);
+        CheckBox c2 = findViewById(R.id.checkbox2);
+        CheckBox c3 = findViewById(R.id.checkbox3);
+        CheckBox c4 = findViewById(R.id.checkbox4);
 
+
+
+        //boolean c1 = checked.isChecked();
+
+        if(c1.isChecked() || c2.isChecked() || c3.isChecked() || c4.isChecked()) {
+            Toast.makeText(AppointmentActivity.this, "Appoinment confirmed", Toast.LENGTH_SHORT).show();
+
+            SharedPreferences preferences = getPreferences(Context.MODE_PRIVATE);
+            SharedPreferences.Editor editor = preferences.edit();
+            preferences.getBoolean("checkbox",value);
+            TextView tv = findViewById(R.id.appConformTV);
+            editor.putBoolean("checkbox", value);
+            editor.commit();
+
+
+            Integer rand = ThreadLocalRandom.current().nextInt(100000, 10000000);
+            tv.setText("Your Confirmation Number:  "+ "CN"+rand.toString() );
+
+        }
+
+        else {
+            Toast.makeText(AppointmentActivity.this, "please select time", Toast.LENGTH_LONG).show();
+            /*SharedPreferences preferences = getPreferences(Context.MODE_PRIVATE);
+            SharedPreferences.Editor editor = preferences.edit();
+            editor.commit();*/
+        }
     }
 
         /*if(preferences.contains("checked") && preferences.getBoolean("checked",false) == true) {
@@ -113,11 +131,11 @@ public class AppointmentActivity extends AppCompatActivity {
         }
 
     }*/
-    public void scheduleClick(View v)
+   /* public void scheduleClick(View v)
     {
         Intent intent = new Intent(this, PatientHomeActivity.class);
         startActivityForResult(intent, appointment);
-    }
+    }*/
     public void back10Click(View v) {
         Intent intent = new Intent(this, DoctorslistActivity.class);
         startActivityForResult(intent,back10);
