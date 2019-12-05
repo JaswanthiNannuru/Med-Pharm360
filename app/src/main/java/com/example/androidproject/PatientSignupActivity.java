@@ -44,7 +44,7 @@ public class PatientSignupActivity extends AppCompatActivity {
                 dlg.setTitle("Please, wait a moment.");
                 dlg.setMessage("Returning to the login section...");
                 dlg.show();
-                Intent intent = new Intent(PatientSignupActivity.this, MainActivity.class);
+                Intent intent = new Intent(PatientSignupActivity.this, SelectionActivity.class);
                 dlg.dismiss();
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(intent);

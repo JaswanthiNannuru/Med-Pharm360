@@ -72,7 +72,7 @@ public class AppointmentActivity extends AppCompatActivity {
         //boolean c1 = checked.isChecked();
 
         if(c1.isChecked() || c2.isChecked() || c3.isChecked() || c4.isChecked()) {
-            Toast.makeText(AppointmentActivity.this, "Appoinment confirmed", Toast.LENGTH_SHORT).show();
+            Toast.makeText(AppointmentActivity.this, "Appointment confirmed", Toast.LENGTH_SHORT).show();
 
             SharedPreferences preferences = getPreferences(Context.MODE_PRIVATE);
             SharedPreferences.Editor editor = preferences.edit();
@@ -80,6 +80,22 @@ public class AppointmentActivity extends AppCompatActivity {
             TextView tv = findViewById(R.id.appConformTV);
             editor.putBoolean("checkbox", value);
             editor.commit();
+
+            if(c1.isChecked())
+            {
+                c1.setVisibility(View.INVISIBLE);
+            }
+            if(c2.isChecked())
+            {
+                c2.setVisibility(View.INVISIBLE);
+            }
+            if(c3.isChecked())
+            {
+                c3.setVisibility(View.INVISIBLE);
+            }if(c4.isChecked())
+            {
+                c4.setVisibility(View.INVISIBLE);
+            }
 
 
             Integer rand = ThreadLocalRandom.current().nextInt(100000, 10000000);

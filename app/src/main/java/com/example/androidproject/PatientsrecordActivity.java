@@ -40,23 +40,38 @@ public class PatientsrecordActivity extends AppCompatActivity {
 
     public void dataBTN(View v) {
 
-        EditText et1 = findViewById(R.id.appnumET);
-        EditText et2 = findViewById(R.id.enterNameET);
-        EditText et3 = findViewById(R.id.appdateET);
-        EditText et4 = findViewById(R.id.reasonET);
-        EditText et5 = findViewById(R.id.medicationET);
+        EditText et1 = findViewById(R.id.editText);
+        EditText et2 = findViewById(R.id.editText2);
+        EditText et3 = findViewById(R.id.editText3);
+        EditText et4 = findViewById(R.id.editText4);
+        EditText et5 = findViewById(R.id.editText5);
+
+
+        ParseObject entity = new ParseObject("B4aVehicle");
+
+        entity.put("AppNum", "CN897987099");
+
+
+        // Saves the new object.
+        // Notice that the SaveCallback is totally optional!
+        entity.saveInBackground(new SaveCallback() {
+            @Override
+            public void done(ParseException e) {
+                // Here you can handle errors, if thrown. Otherwise, "e" should be null
+            }
+        });
 
 
         TextView tv = findViewById(R.id.displaymainTV);
         tv.setText("Appointment number: " + et1.getText().toString()+
                 "\n"+
-                  "Doctor Name: " + et2.getText().toString() +
+                "Doctor Name: " + et2.getText().toString() +
                 "\n"+
-                        "Appointment date: " + et3.getText().toString() +
-                        "\n"+
-                        "Reason: " + et4.getText().toString() +
-                        "\n"+
-                        "Mediacation: " + et5.getText().toString() +
-                        "\n");
+                "Appointment date: " + et3.getText().toString() +
+                "\n"+
+                "Reason: " + et4.getText().toString() +
+                "\n"+
+                "Medication: " + et5.getText().toString() +
+                "\n");
     }
 }
