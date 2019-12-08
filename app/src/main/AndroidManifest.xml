@@ -26,9 +26,7 @@
         <activity android:name=".DoctorslistActivity"> </activity>
         <activity android:name=".AppointmentActivity"> </activity>
         <activity android:name=".PatientsrecordActivity"> </activity>
-        <activity android:name=".Patient1Activity"> </activity>
-        <activity android:name=".Patient2Activity"> </activity>
-        <activity android:name=".Patient3Activity"> </activity>
+       
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
