@@ -22,4 +22,4 @@
 ##### PATIENT LOGIN
 - __username__: patient, __password__: patient
 ### CONCLUSION
-This App helps doctors and Patients in either way. Doctors use this Application to look at the Patients Previous History and Patients use this Application to book the appointment at doctor and also can view their Health Record.
+This App helps doctors and Patients in either way. Doctors use this Application to set their available times and look at the Patients Previous History and Patients use this Application to book the appointment at doctor and update details of health record that could help for future use.
