@@ -28,7 +28,7 @@
         android:layout_height="40dp"
         android:layout_marginLeft="100dp"
         android:onClick="historyClick"
-        android:text="healthhistory"
+        android:text="health history"
         android:backgroundTint="#3949AB"
         android:textColor="#FAFAFC"
         app:layout_constraintBottom_toBottomOf="parent"
